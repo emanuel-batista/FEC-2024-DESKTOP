@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Epom - logar</title>
+    <link rel="stylesheet" href="../assets/style.css" />
+  </head>
+  <body>
+    <div class="container">
+        <div class="form">
+            <h1>faça login:</h1>
+            <form action="">
+                <input type="text" placeholder="ID">
+                <input type="password" name="" id="" placeholder="Senha">
+                <div class="buttons">
+                    <button type="button" id="loginBtn">entrar</button> <!-- aqui seria submit -->
+                    <button id="goBack" type="button">voltar</button> 
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        const goBackButton = document.getElementById('goBack');
+        goBackButton.addEventListener('click', () => {
+            window.location.href = '../index.html';
+        });
+
+
+    </script>
+
+    <script src="../assets/renderer.js"></script>
+  </body>
+</html>
